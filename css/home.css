@@ -1,0 +1,584 @@
+@import url(./style.css);
+
+#testimonials ::-webkit-scrollbar {
+    display: none;
+}
+
+#accBar{
+    background-color: #6CBF00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+#starDiv{
+    display: flex;
+}
+
+#accBar a{
+    color: white;
+}
+
+
+/* Hero Section */
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    background: url('../Images/hero-home-bg.png') center center/cover no-repeat;
+}
+
+#heroDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero p {
+    font-size: 24px;
+}
+
+#heroP1 {
+    color: #6CBF00;
+    font-weight: 600;
+}
+
+#heroP2 {
+    margin-top: 26px;
+}
+
+
+
+#hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: bolder;
+    margin-top: 16px;
+    font-family: Lab-Grotesque-Black;
+}
+
+#img {
+    display: flex;
+    align-items: end;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 0px;
+    margin-top: 47px;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #hero {
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+
+    #heroDiv {
+        align-items: center;
+    }
+
+    #img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 445px) {
+
+    #hero {
+        padding: 50px 10px;
+    }
+
+    #hero h1 {
+        font-size: 27px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #hero p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #hero .btn {
+        margin-top: 20px;
+    }
+
+    #heroP2 {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Intro Video */
+
+#introVideo {
+    background: url('../Images/home-video-bg.png') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+#introVideo img {
+    width: 100%;
+}
+
+#introVideo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 950px;
+}
+
+#introVideo div iframe {
+    position: absolute;
+    width: 97%;
+    height: 94%;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #introVideo div {
+        width: 100%;
+    }
+
+    /* #introVideo div iframe {
+        width: 100%;
+        height: 100%;
+    } */
+}
+
+@media screen and (max-width: 445px) {
+
+    #introVideo {
+        padding: 20px;
+    }
+
+    #introVideo div iframe {
+        border-radius: 4px;
+    }
+
+
+}
+
+/* Stack Section */
+
+#stack {
+    background-color: #FFFAF1;
+    padding: 0 40px;
+    padding-top: 44px;
+}
+
+#stack h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 26px 0;
+}
+
+#btnStackDiv{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.hidden{
+    display: none;
+}
+
+.stackDiv {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+.stackDiv img {
+    border-radius: 12px;
+}
+
+.stackDivInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stackDivInner h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.stackDivInner p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.stackBenifit {
+    font-weight: 700;
+}
+
+.stackDivInner ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .stackDiv {
+        flex-direction: column;
+    }
+
+    .imgStack img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 445px) {
+
+    #stack {
+        padding: 20px;
+    }
+
+   
+
+    #stack h2 {
+        font-size: 30px;
+    }
+
+    .stackDiv {
+        padding: 15px;
+        position: relative;
+    }
+
+    .imgStack{
+        width: 300px;
+    }
+
+    #stackDiv1,#stackDiv2{
+        display: flex;
+        overflow: auto;
+    }
+
+    .stackDivInner h3 {
+        font-size: 24px;
+    }
+
+    .stackDivInner p {
+        font-size: 16px;
+    }
+
+    .stackDivInner ul li {
+        font-size: 14px;
+    }
+
+    
+
+    .stackDivInner .btn {
+        margin-top: 0px;
+    }
+}
+
+/* Collections Section */
+#collections {
+    padding: 40px;
+}
+
+#collections h2 {
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#collImgs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#collImgs img{
+    width: 100%;
+}
+
+#collImg2{
+    display: flex;
+    gap: 20px;
+}
+
+
+#collectionImg2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #collImgs{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #collImg2{
+        flex-direction: column;
+    }
+
+    #collections{
+        padding: 30px 20px;
+    }
+}
+
+
+
+/* Why Gropzy Section */
+
+#whyGropzy {
+    background: #FFFCF5;
+    padding: 46px 129px;
+}
+
+#whyGropzy h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.choose {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.chooseHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chooseHeading h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.icon:hover {
+    border: 1px solid #6CBF00;
+    color: #6CBF00;
+}
+
+
+.icon.active {
+    color: #6CBF00;
+    background-color: #F3FFDA;
+    rotate: 180deg;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background: #D7D7D7;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.chooseInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chooseInner p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .chooseInner {
+        flex-direction: column-reverse;
+    }
+
+    #whyGropzy {
+        padding: 46px 50px;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+
+    #whyGropzy {
+        padding: 20px;
+    }
+
+    #whyGropzy h2 {
+        font-size: 30px;
+    }
+
+    .choose {
+        padding: 15px;
+    }
+
+    .chooseHeading h3 {
+        font-size: 20px;
+    }
+
+    .chooseInner p {
+        font-size: 16px;
+    }
+
+    .chooseInner img {
+        width: 100%;
+    }
+
+}
+
+/* Testimonial Section */
+
+
+#testimonials {
+    padding: 40px 70px;
+}
+
+#testimonials h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+
+#slider {
+    display: flex;
+    gap: 40px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 12px;
+    width: 618px;
+    box-shadow: 0px 0px 10px rgb(212, 212, 212);
+}
+
+.sliderImg {
+    height: 100%;
+}
+
+
+.testiDetails {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.testiDetails p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.testiDetails h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#slideBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+#slideBtns button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+        border-radius: 20px;
+        width: 400px;
+    }
+
+    .sliderImg {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #slideBtns {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+
+    #testimonials {
+        padding: 20px;
+    }
+
+    #testimonials h2 {
+        font-size: 25px;
+    }
+
+    .slider {
+        width: 300px;
+    }
+
+
+}

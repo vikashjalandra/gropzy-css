@@ -1,0 +1,811 @@
+#hero-hydroponic {
+    padding: 30px 40px;
+    display: flex;
+    background-color: white;
+}
+
+#hydroponicDetails {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 100px 40px;
+}
+
+#hydroponicDetails h1 {
+    color: #000;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63px;
+    /* 114.545% */
+}
+
+#hydroponicDetails p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 30px;
+    /* 31.2px */
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 0px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.btnWhite {
+    background-color: white;
+    color: black;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#hydroponicVideo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hydroponicVideo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    #hero-hydroponic{
+        flex-direction: column;
+    }
+
+    #hydroponicDetails{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hydroponicVideo{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+/* Made to Suit Your Space */
+
+#compareGropzy{
+    padding: 50px 36px;
+    background: #FFFAF1;
+}
+
+#compareGropzy h2 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    /* 120% */
+    text-align: center;
+}
+
+#btnDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btnDivInner{
+    background-color: white;
+    border-radius: 100px;
+}
+
+.btnRound{
+    padding: 12px 28px;
+    color: #545454;
+    background-color: white;
+    border: 0px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnRound.active{
+    background-color: black;
+    color: white;
+}
+
+.hiddens{
+    display: none;
+}
+
+
+
+.mainContentDiv{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mainContent{
+    width: 100%;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.mainContentImg {
+    width: 100%;
+}
+.mainContentImg img{
+    width: 100%;
+}
+
+.mainContentDetails{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.mainContentDetails h3{
+    color: #000;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 26px */
+}
+
+.mainContentDetails p{
+    color: #000;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%;
+}
+
+.mainContentDetails ul{
+    font-size: 16px;
+    margin-left: 20px;
+    line-height: 130%;
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+
+
+/* Know Before you start */
+
+
+#whyGropzy {
+    background: #FAFFEF;
+    padding: 46px 129px;
+}
+
+#whyGropzy h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.choose {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.25);
+}
+
+.chooseHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chooseHeading h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.icon:hover {
+    border: 1px solid #6CBF00;
+    color: #6CBF00;
+}
+
+
+.icon.active {
+    color: #6CBF00;
+    background-color: #F3FFDA;
+    rotate: 180deg;
+}
+
+.colDetails {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.colDetails ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.colImg {
+    width: 50%;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background: #D7D7D7;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.chooseInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.chooseInner p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.5px;
+}
+
+.colDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colHeading {
+    color: #CE7241;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.colPara {
+    color: #3C3B3B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 20.8px */
+    letter-spacing: 0.08px;
+    margin-top: 10px;
+}
+
+.colBtn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .chooseInner {
+        flex-direction: column-reverse;
+    }
+
+    #whyGropzy {
+        padding: 46px 50px;
+    }
+
+    .colImg{
+        width: 100%;
+    }
+
+    .colDetails{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+
+    .colImg{
+        width: 100%;
+    }
+
+    .colDetails{
+        width: 100%;
+    }
+
+    #whyGropzy {
+        padding: 20px;
+    }
+
+    #whyGropzy h2 {
+        font-size: 30px;
+    }
+
+    .choose {
+        padding: 15px;
+    }
+
+    .chooseHeading h3 {
+        font-size: 20px;
+    }
+
+    .chooseInner p {
+        font-size: 16px;
+    }
+
+    .chooseInner img {
+        width: 100%;
+    }
+
+}
+
+/* How we grow Section */
+
+#howWeGrow {
+    padding: 50px 140px;
+}
+
+#howWeGrow h2 {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+    /* 120% */
+    letter-spacing: 0.5px;
+}
+
+#hydroStake {
+    margin-top: 40px;
+}
+
+
+.headingGreen {
+    color: #6CBF00;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.timeGray {
+    color: #7A7A7A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hydroStake {
+    display: flex;
+    gap: 87px;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(185, 189, 163, 0.25);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.hydroStakeDetails {
+    width: 50%;
+}
+
+.hydroStakeDetails h3 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 41.6px */
+    margin-top: 25px;
+}
+
+.hydroStakeImg {
+    width: 50%;
+}
+
+.hydroStakeImg img {
+    width: 100%;
+}
+
+.hydroStakeDetailsHead {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.hydroStakeDetailsPara1 {
+    margin-top: 25px;
+
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.hydroStakeDetailsPara2 {
+    margin-top: 40px;
+
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+@media screen and (max-width: 1024px) {
+    .hydroStake{
+        flex-direction: column-reverse;
+    }
+
+   
+    .worksImg{
+        display: block;
+    }
+
+    .hydroStakeDetails{
+        width: 100%;
+    }
+
+    .hydroStakeImg{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #howWeGrow{
+        padding: 50px 20px;
+    }
+}
+
+/* How Gropzy Works */
+
+#howGropzyWorks {
+    padding: 40px 80px;
+}
+
+#howGropzyWorks h2 {
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+}
+
+#gropzyWorksMain {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+#gropzyWorksContent {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.actChild.active {
+    border-left: 3px solid #6CBF00;
+}
+
+.actChild {
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgb(233, 234, 225);
+    padding: 15px 18px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h3 {
+    color: black;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    /* 123.81% */
+}
+
+.heading.active h3 {
+    color: #6CBF00;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content p{
+    color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+}
+
+.content ul{
+    margin-left: 20px;
+    line-height: 2;
+}
+
+
+
+#gropzyWorksImg {
+    width: 55%;
+}
+
+#gropzyWorksImg img{
+    width: 100%;
+}
+
+.worksImg{
+    display: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .hydroStake{
+        flex-direction: column-reverse;
+    }
+
+    #gropzyWorksImg {
+        display: none;
+    }
+
+    #gropzyWorksContent{
+        width: 100%;
+    }
+    .worksImg{
+        display: block;
+    }
+
+    .hydroStakeDetails{
+        width: 100%;
+    }
+
+    .hydroStakeImg{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #howWeGrow{
+        padding: 50px 20px;
+    }
+}
+
+
+/* Quick Info */
+
+
+#quickInfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 30px 43px;
+    background-color: black;
+    color: white;
+}
+
+#quickInfo h2 {
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+}
+
+#quickInfoDiv{
+    width: 75%;
+}
+
+.btnGreen {
+    background-color: #6CBF00;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 0px;
+    font-size: 16px;
+}
+
+#quickInfoBtn {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#quickInfo p {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.5px;
+    margin-top: 21px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #quickInfo{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #quickInfoDiv{
+        width: 100%;
+    }
+
+    #quickInfoBtn{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+   
+
+    #quickInfo h2 {
+        font-size: 32px;
+    }
+
+    #quickInfo p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btnGreen {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* Gropzy Life */
+
+#gropzyLife{
+    padding: 100px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#gropzyLife1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#gropzyLife img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#gropzyLife h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+}
+
+.gropzyLifeImg{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#gropzyLife p {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+
+
+#gropzyLifeImg2{
+    display: flex;
+    flex-direction: column;
+}
+
+#lifeHead1{
+    display: none;
+}
+
+#gropzyLife2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #lifeHead1{
+        display: block;
+    }
+
+    #lifeHead2{
+        display: none;
+    }
+    
+    #gropzyLife1{
+        flex-direction: column;
+    }
+
+    #gropzyLife2{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+   
+
+    #gropzyLife p{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+

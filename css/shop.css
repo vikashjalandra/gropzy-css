@@ -1,0 +1,267 @@
+/* Hero Section */
+
+#shopHero {
+    background: url('../Images/hero-shop-bg.png') center center/cover no-repeat;
+    display: flex;
+    gap: 300px;
+    padding: 0 70px;
+}
+
+#heroShopInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#heroShopInfo h1 {
+    color: #000;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#heroShopInfo p {
+    color: #111312;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 42px;
+    margin-top: 22px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 0px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#heroShopImg {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 75px;
+    padding-top: 44px;
+}
+
+#heroShopImg img {
+    width: 333px;
+}
+
+@media screen and (max-width: 1024px) {
+    #shopHero {
+        padding: 70px 40px;
+    }
+
+    #heroShopImg {
+        display: none;
+    }
+
+    #heroShopInfo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+}
+
+
+/* Shop Cards */
+#shopCards {
+    display: flex;
+    padding: 54px 36px;
+    gap: 14px;
+    justify-content: space-between;
+}
+
+.shopCard {
+    display: flex;
+    padding: 45px;
+    border-radius: 8px;
+    width: 100%;
+    background: linear-gradient(to right, #ddf0ec, #eff8f5);
+}
+
+.shopCardInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopCardInfo h2 {
+    margin-top: 6px;
+    color: #000;
+    font-size: 45.426px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 53.543px;
+    /* 117.869% */
+}
+
+.p1 {
+    color: #008641;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.p2 {
+    color: #111312;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 34px;
+}
+
+.shopCardImg {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shopCardImg img {
+    width: 182px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    #shopCards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+}
+
+/* Features Section  */
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding: 70px 45px;
+}
+
+.feature {
+    display: flex;
+    gap: 15px;
+    justify-self: center;
+}
+
+.feature h2 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 26px */
+    letter-spacing: 0.4px;
+}
+
+.feature p {
+    color: #7A7A7A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.36px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    #features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #features {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .feature {
+        justify-self: start;
+    }
+
+    .alter {
+        justify-self: end;
+    }
+}
+
+/* Partner Section */
+
+#partnerWU {
+    display: flex;
+    justify-content: space-between;
+    background: #FFF5F5;
+    border-radius: 8px;
+    margin: 40px;
+    padding: 40px;
+}
+
+#parterInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#parterInfo h2 {
+    color: #000;
+    font-size: 30.379px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#parterInfo p {
+    color: #000;
+font-family: Inter;
+font-size: 16.139px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 20.98px */
+letter-spacing: 0.323px;
+margin-top: 5px;
+margin-bottom: 40px;
+width: 60%;
+}
+
+#partnerImg svg{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #partnerWU{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #parterInfo p {
+        width: 100%;
+    }
+
+    .btn{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,321 @@
+/* Hero About Section */
+
+#aboutHero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    background: url('../Images/hero-about-bg.png') center center/cover no-repeat;
+
+}
+
+#aboutHeroDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#aboutHeroDetails h1 {
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 57.6px;
+}
+
+#aboutHeroDetails p {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.5px;
+    margin-top: 21px;
+}
+
+#aboutHeroImg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    width: 50%;
+}
+
+#aboutHeroImg img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+@media screen and (max-width: 1024px) {
+    #aboutHero h1 {
+        font-size: 40px;
+    }
+    #aboutHero p{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    #aboutHero {
+        padding: 100px 20px;
+    }
+    #aboutHeroImg{
+        display: none;
+    }
+    #aboutHeroDetails {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    #aboutHero {
+        padding: 100px 10px;
+    }
+
+    #aboutHeroDetails h1 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+
+    #aboutHeroDetails p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+/* Our Story Section */
+#ourStory {
+    padding: 20px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ourStory h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+}
+
+#ourStoryVideo{
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+#ourStory p {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.5px;
+    margin-top: 21px;
+}
+
+@media screen and (max-width: 1024px) {
+    #ourStory {
+        padding: 40px;
+    }
+    
+    #ourStoryVideo{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #ourStoryVideo{
+        height: 180px;
+    }
+    #ourStory  {
+        padding: 30px 20px;
+    }
+
+    #ourStory p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+}
+
+/* quick info */
+
+#quickInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 150px;
+    padding: 30px 43px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+
+#quickInfo h2 {
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+}
+
+#quickInfoDiv{
+    width: 75%;
+}
+
+.btnGreen {
+    background-color: #6CBF00;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 0px;
+    font-size: 16px;
+}
+
+#quickInfoBtn {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#quickInfo p {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.5px;
+    margin-top: 21px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #quickInfo{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+
+        margin: 20px;
+    }
+
+    #quickInfoDiv{
+        width: 100%;
+    }
+
+    #quickInfoBtn{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    #quickInfo {
+        margin:30px 15px;
+    }
+
+    #quickInfo h2 {
+        font-size: 32px;
+    }
+
+    #quickInfo p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btnGreen {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
+
+/* Life With Gropzy */
+
+#gropzyLife{
+    padding: 100px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#gropzyLife1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#gropzyLife img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#gropzyLife h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+}
+
+.gropzyLifeImg{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#gropzyLife p {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+
+
+#gropzyLifeImg2{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+}
+
+#lifeHead1{
+    display: none;
+}
+
+#gropzyLife2{
+    display: flex;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #lifeHead1{
+        display: block;
+    }
+
+    #lifeHead2{
+        display: none;
+    }
+    
+    #gropzyLife1{
+        flex-direction: column;
+    }
+
+    #gropzyLife2{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #gropzyLife{
+        padding: 30px 20px;
+    }
+
+    #gropzyLife p{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+

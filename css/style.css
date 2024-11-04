@@ -1,0 +1,150 @@
+:root {
+  --primary: #6CBF00
+}
+
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+h1,
+h2,
+h3 {
+  font-family: Lab-Grotesque-Regular;
+  font-weight: 500;
+
+}
+
+h1 {
+  font-family: Lab-Grotesque-Black;
+
+}
+
+.hidden {
+  display: none;
+}
+
+/* h1{
+    font-weight: 900;
+  } */
+
+@font-face {
+  font-family: Lab-Grotesque-Black;
+  src: url(../LabGrotesque-Black.ttf);
+}
+
+@font-face {
+  font-family: Lab-Grotesque-Regular;
+  src: url(../LabGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: Lab-Grotesque-Bold;
+  src: url(../LabGrotesque-Bold.ttf);
+}
+
+footer {
+  background-color: black;
+  padding: 36px 50px;
+}
+
+#footerUpper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerUpper h4 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+  margin-bottom: 16px;
+  /* 120% */
+}
+
+#footerUpper ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#footerUpper a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+  /* 120% */
+}
+
+#detailsFooter {
+  color: white;
+}
+
+#detailsFooter h4 {
+  margin-top: 20px;
+}
+
+#detailsFooter p {
+  width: 429px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 131.25% */
+}
+
+
+#separator {
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  margin-top: 60px;
+}
+
+#footerLower {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  #footerUpper{
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #footerLower{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #detailsFooter p {
+    width: 100%;
+  }
+
+  footer{
+    padding: 50px 20px;
+  }
+}
