@@ -14,111 +14,252 @@
     gap: 10px;
 }
 
+.accBarPara{
+    font-size: 14px;
+}
+
 #starDiv{
     display: flex;
+
 }
 
 #accBar a{
+    font-size: 14px;
     color: white;
 }
+
+@media screen and (max-width: 445px){
+    #starDiv{
+        width: 12px;
+        height: 12px;
+    }
+    .accBarPara{
+        display: none;
+    }
+
+    #accBar{
+        font-size: 14px;
+        gap:5px;
+    }
+}
+
+
 
 
 /* Hero Section */
 
-#hero {
+#hero{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.p1{
+    color: #6CBF00;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.p2{
+    color: #000;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; /* 112.5% */
+letter-spacing: 0.48px;
+margin-top: 16px;
+
+}
+
+.slideDetails{
+    width: 50%;
+}
+
+.slideDetails h1{
+    color: #000;
+    text-wrap: balance;
+font-size: 55px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+margin-top: 16px;
+}
+
+.mySlides{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding: 0 70px;
+}
+
+#mySlide1{
     background: url('../Images/hero-home-bg.png') center center/cover no-repeat;
 }
 
-#heroDiv {
+.iconBtn{
+    width: 30px;
+    height: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #6CBF00;
+    color: white;
 }
 
-#hero p {
-    font-size: 24px;
+.mobBtns{
+    display: none;
 }
 
-#heroP1 {
-    color: #6CBF00;
-    font-weight: 600;
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* margin-top: -22px; */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-#heroP2 {
-    margin-top: 26px;
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name:fade;
+    animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
-
-#hero h1 {
-    font-size: 55px;
-    line-height: 1.2;
-    font-weight: bolder;
-    margin-top: 16px;
-    font-family: Lab-Grotesque-Black;
-}
-
-#img {
+.img{
     display: flex;
-    align-items: end;
+    /* width: 50%; */
 }
 
-.btn {
+.img img{
+    width: 100%;
+}
+
+.btn{
     background-color: black;
     color: white;
-    padding: 12px 28px;
-    border-radius: 6px;
-    border: 0px;
-    margin-top: 47px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-
-
-@media screen and (max-width: 1024px) {
-    #hero {
-        flex-direction: column;
-        padding: 30px 30px;
+@media screen and (max-width:1024px){
+    .slideDetails h1{
+        font-size: 40px;
     }
 
-    #heroDiv {
-        align-items: center;
+    .p1{
+        font-size: 20px;
     }
 
-    #img {
+    .p2{
+        font-size: 20px;
+    }
+
+    .btn{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .img{
         display: none;
     }
-}
 
-@media screen and (max-width: 445px) {
-
-    #hero {
-        padding: 50px 10px;
+    .slideDetails{
+        width: 100%;
+        text-align: center;
     }
 
-    #hero h1 {
-        font-size: 27px;
-        text-align: center;
+    .mySlides{
+        padding: 30px ;
+    }
+}
+
+@media screen and (max-width:445px){
+    .slideDetails h1{
+        font-size: 25px;
         margin-top: 10px;
     }
 
-    #hero p {
+    .mySlides{
+        padding: 50px 15px;
+    }
+
+    .p1{
         font-size: 16px;
-        text-align: center;
     }
 
-    #hero .btn {
-        margin-top: 20px;
-    }
-
-    #heroP2 {
+    .p2{
+        font-size: 16px;
         margin-top: 10px;
     }
+
+    .btn{
+        font-size: 14px;
+    }
+
+    .prev,.next{
+        display: none;
+    }
+
+    .mobBtns{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
 }
 
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #c0bdb9;
+    border-radius: 20px;
+}
+#stackDiv1::-webkit-scrollbar,#stackDiv2::-webkit-scrollbar{
+    height: 5px;
+}
 
 
 /* Intro Video */
@@ -201,25 +342,75 @@
 }
 
 .stackDiv {
-    position: sticky;
-    top: 0;
     background-color: white;
     border-radius: 12px;
     display: flex;
     gap: 40px;
     padding: 40px;
+    min-width: 94%;
+    position: relative;
 }
+
+#stackDiv1,#stackDiv2{
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+}
+
+#stackDiv1::-webkit-scrollbar,#stackDiv2::-webkit-scrollbar{
+    height: 5px;
+}
+
+
 
 .stackDiv img {
     border-radius: 12px;
 }
+
+
 
 .stackDivInner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    position: relative;
 }
+
+.stackIcons{
+    position: absolute;
+    right: 40px;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    gap: 10px;
+}
+
+.stackIcons1{
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#scrollIt1,#scrollIt2{
+    display: none;
+}
+
+.stackNavIcon{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+}
+
 
 .stackDivInner h3 {
     font-size: 30px;
@@ -251,6 +442,10 @@ ul {
 
 @media screen and (max-width: 1024px) {
 
+    #scrollIt1{
+        display: flex;
+    }
+
     .stackDiv {
         flex-direction: column;
     }
@@ -275,15 +470,14 @@ ul {
     .stackDiv {
         padding: 15px;
         position: relative;
+        min-width: 90%;
     }
 
-    .imgStack{
-        width: 300px;
-    }
 
     #stackDiv1,#stackDiv2{
         display: flex;
         overflow: auto;
+        gap: 20px;
     }
 
     .stackDivInner h3 {

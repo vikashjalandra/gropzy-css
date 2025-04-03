@@ -25,27 +25,83 @@
                     d="M8 0.5C9.28575 3.97468 12.0253 6.71425 15.5 8C12.0253 9.28575 9.28575 12.0253 8 15.5C6.71425 12.0253 3.97468 9.28575 0.5 8C3.97468 6.71425 6.71425 3.97468 8 0.5Z"
                     fill="white" />
             </svg></div>
-        <p>Ready to Take Your Gardening Interest to the Next Level? Hydroponic Experts that Listens.</p> <a href="">Book
+        <p class="accBarPara">Ready to Take Your Gardening Interest to the Next Level? Hydroponic Experts that Listens.</p> <a href="">Book
             a Free Consultation</a>
     </section>
 
-    <section id="hero">
-        <div id="heroDiv">
-            <p id="heroP1">Grow Plants Eazily</p>
-            <h1>Grow Your Own Veggies!
-                <br> No Experience Needed.
-            </h1>
-            <p id="heroP2">Easy system, expert guidance, and delicious results!
-            </p>
-            <div>
-                <a href=""><button class="btn">Request a
-                        Call Back</button></a>
-            </div>
+    <section id="hero" class="slideshow-container">
+        <div id="mySlide1" class="mySlides fade">
+            <div class="slideDetails">
+                <p class="p1">Grow Plants Easily</p>
+                <h1>Grow your own veggies! No experience needed.</h1>
+                <p class="p2">Easy system, expert guidance, and delicious results!</p>
 
+                <div>
+                    <a href="">
+                        <button class="btn">Request a Call Back</button>
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./Images/hero-home.webp" alt="">
+            </div>
+        </div>
+        <div id="mySlide2" class="mySlides fade">
+            <div class="slideDetails">
+                <p class="p1">Grow Plants Easily 2</p>
+                <h1>Grow your own veggies! No experience needed.</h1>
+                <p class="p2">Easy system, expert guidance, and delicious results!</p>
+
+                <div>
+                    <a href="">
+                        <button class="btn">Request a Call Back</button>
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./Images/hero-about.png" alt="">
+            </div>
+        </div>
+        <div id="mySlide3" class="mySlides fade">
+            <div class="slideDetails">
+                <p class="p1">Grow Plants Easily 3</p>
+                <h1>Grow your own veggies! No experience needed.</h1>
+                <p class="p2">Easy system, expert guidance, and delicious results!</p>
+
+                <div>
+                    <a href="">
+                        <button class="btn">Request a Call Back</button>
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./Images/home-slide2.png" alt="">
+            </div>
         </div>
 
-        <div id="img">
-            <img src="./Images/hero-home.webp" alt="">
+        <a class="prev" onclick="plusSlider(-1)">
+            <span class="iconBtn">
+                &#10094
+            </span>
+        </a>
+        <a class="next" onclick="plusSlider(1)">
+            <span class="iconBtn">
+                &#10095
+            </span>
+        </a>
+
+        <div class="mobBtns">
+            <a class="prev1" onclick="plusSlider(-1)">
+                <span class="iconBtn">
+                    &#10094
+                </span>
+            </a>
+            <p id="numSlide">1/3</p>
+            <a class="next1" onclick="plusSlider(1)">
+                <span class="iconBtn">
+                    &#10095
+                </span>
+            </a>
         </div>
     </section>
 
@@ -68,8 +124,13 @@
                 <button id="indoorBtn" class="btnRound">Indoor</button>
             </div>
         </div>
-        <div id="stackDiv1">
-            <div class=" stackDiv ">
+        <div id="stackDiv1" class="scrollIt">
+            <div class=" stackDiv " id="stackDiv11">
+                <div class="stackIcons">
+                    <a class="stackNavIcon" onclick="srclLeft()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <p>1/3</p>
+                    <a class="stackNavIcon" onclick="scrlRight()"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
                 <div class="imgStack">
                     <img src="./Images/rooftop.png" alt="">
                 </div>
@@ -95,7 +156,12 @@
                     </div>
                 </div>
             </div>
-            <div class="stackDiv">
+            <div class="stackDiv" id="stackDiv12">
+                <div class="stackIcons">
+                    <a class="stackNavIcon" onclick="scrlLeft()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <p>1/3</p>
+                    <a class="stackNavIcon" onclick="scrlRight()"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
                 <div class="imgStack">
                     <img src="./Images/backyard.png" alt="">
                 </div>
@@ -121,6 +187,11 @@
                 </div>
             </div>
             <div class="stackDiv ">
+                <div class="stackIcons">
+                    <a class="stackNavIcon" onclick="scrlLeft()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <p>1/3</p>
+                    <a class="stackNavIcon" onclick="scrlRight()"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
                 <div class="imgStack">
                     <img src="./Images/balcony.png" alt="">
                 </div>
@@ -145,6 +216,11 @@
                 </div>
             </div>
             <div class="stackDiv">
+                <div class="stackIcons">
+                    <a class="stackNavIcon" onclick="scrlLeft()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <p>1/3</p>
+                    <a class="stackNavIcon" onclick="scrlRight()"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
                 <div class="imgStack">
                     <img src="./Images/patio.png" alt="">
                 </div>
@@ -169,108 +245,17 @@
                     </div>
                 </div>
             </div>
+            
         </div>
-        <div id="stackDiv2" class="hidden">
-            <div class=" stackDiv ">
-                <div class="imgStack">
-                    <img src="./Images/rooftop.png" alt="">
-                </div>
-                <div class=" stackDivInner ">
-                    <h3>Rooftop 2</h3>
-                    <p>Our Rooftop Setup makes it easy to turn your rooftop into a personal garden.
-                        Grow fresh veggies with qualilty soil and minimal effort, making the most of your urban space.
-                    </p>
-                    <p class="stackBenifit">Benifits:</p>
-                    <ul>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Fresh, organic food at
-                                home</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Perfect for limited outdoor
-                                spaces</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Sustainable, low-water
-                                usage</span></li>
-                    </ul>
-                    <div>
-                        <a href="">
-                            <button class="btn">Book Free
-                                Consultation</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="stackDiv">
-                <div class="imgStack">
-                    <img src="./Images/backyard.png" alt="">
-                </div>
-                <div class=" stackDivInner ">
-                    <h3>Backyard</h3>
-                    <p>Our Backyard Setup turns your outdoor space into a productive garden. Grow
-                        your own vegetables with ease, using hydroponics for efficient cultivation.</p>
-                    <p class="stackBenifit">Benifits:</p>
-                    <ul>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Access to fresh and organic
-                                food </span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Maximizes backyard
-                                potential</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Promotes sustainable life
-                                solutions</span></li>
-                    </ul>
-                    <div>
-                        <a href="">
-                            <button class="btn">Book Free
-                                Consultation</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="stackDiv ">
-                <div class="imgStack">
-                    <img src="./Images/balcony.png" alt="">
-                </div>
-                <div class="stackDivInner ">
-                    <h3>Balcony</h3>
-                    <p>Transform your balcony with GROPZY’s Balcony Setup. Grow fresh veggies
-                        year-round, even in small spaces, with minimal efforts.</p>
-                    <p class="stackBenifit">Benifits:</p>
-                    <ul>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Fresh vegetables at
-                                home</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Space-saving customised
-                                setups</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Reward with </span></li>
-                    </ul>
-                    <div>
-                        <a href="">
-                            <button class="btn">Book Free
-                                Consultation</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="stackDiv">
-                <div class="imgStack">
-                    <img src="./Images/patio.png" alt="">
-                </div>
-                <div class="stackDivInner">
-                    <h3>Patio</h3>
-                    <p>Our Patio Setup turns your patio into a vibrant garden space. Grow fresh,
-                        nutritious veggies easily with our hydroponic system.</p>
-                    <p class=" stackBenifit">Benifits:</p>
-                    <ul>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Enjoy home-grown
-                                produce</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Ideal for small to medium
-                                outdoor areas</span></li>
-                        <li><img src="./Images/leaf.png" alt=""> <span>Low-maintenance and
-                                water-efficient</span></li>
-                    </ul>
-                    <div>
-                        <a href="">
-                            <button class="btn">Book Free
-                                Consultation</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div id="scrollIt1" class="stackIcons1">
+            <a class="stackNavIcon" onclick="scrlLeft()"><i class="fa-solid fa-chevron-left"></i></a>
+            <p id="scrlNum1">1/3</p>
+            <a class="stackNavIcon" id="right1" onclick="scrlRight()"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div id="scrollIt2" class="stackIcons1">
+            <a class="stackNavIcon" onclick="scrlLeft1()"><i class="fa-solid fa-chevron-left"></i></a>
+            <p id="scrlNum1">1/3</p>
+            <a class="stackNavIcon" onclick="scrlRight1()"><i class="fa-solid fa-chevron-right"></i></a>
         </div>
     </section>
 
